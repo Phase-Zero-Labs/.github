@@ -1,47 +1,74 @@
-# 🧬 Tissue Dynamics
+# Phase Zero Labs
 
-**Disrupting the world of pharmaceutical development to increase the speed at which we can cure diseases, and make more healthy and happy people.**
+**Disrupting pharmaceutical development to accelerate cures and improve lives.**
 
-## 🔬 What We Do
+## What We Do
 
-We develop cutting-edge tools and analyses for drug discovery and tissue engineering, combining:
-- **Organoid Technology**: Advanced 3D tissue models for drug testing
-- **Computational Biology**: RNA-seq analysis, toxicity prediction, and biomarker discovery  
-- **Machine Learning**: AI-powered drug discovery and clinical data analysis
-- **Laboratory Automation**: Streamlined workflows for high-throughput screening
+We develop cutting-edge tools and analyses for drug discovery and tissue engineering:
 
-## 🚀 Featured Projects
+- **Organoid Technology** - Advanced 3D tissue models for drug testing
+- **Computational Biology** - RNA-seq analysis, toxicity prediction, biomarker discovery  
+- **Machine Learning** - AI-powered drug discovery and clinical data analysis
+- **Laboratory Automation** - High-throughput screening workflows
 
-### Core Platforms
-- [**td-rna**](https://github.com/Tissue-Dynamics/td-rna) - Comprehensive RNA-seq data management and analysis platform
-- [**td-ui**](https://github.com/Tissue-Dynamics/td-ui) - Shared component library for Tissue Dynamics applications
-- [**organoid-detection-tool**](https://github.com/Tissue-Dynamics/organoid-detection-tool) - Automated organoid analysis in microscopy images
+## Teams
 
-### Research Tools
-- [**deep-researcher**](https://github.com/Tissue-Dynamics/deep-researcher) - AI assistant for pharmacokinetic and clinical trial data
-- [**402-bpiq-explorer**](https://github.com/Tissue-Dynamics/402-bpiq-explorer) - Interactive data exploration platform
+| Team | Focus | Repositories |
+|------|-------|--------------|
+| **Tissue Dynamics** (`td-core`) | Research, lab tools, analysis pipelines | `td-*` repos |
+| **Phase Zero Labs** (`pzl-core`) | AI/ML, clinical research, external tools | `pzl-*` repos |
 
-## 💻 Technology Stack
+## Repository Standards
+
+### Naming Conventions
+
+| Prefix | Description |
+|--------|-------------|
+| `td-*` | Tissue Dynamics projects |
+| `pzl-*` | Phase Zero Labs projects |
+| `shared-*` | Shared tooling and templates |
+| `402-*` | Legacy/archived projects |
+
+### Required for All Repos
+
+1. **Meaningful description** (10+ characters)
+2. **README.md** with setup instructions (100+ characters)
+3. **Topics** from these categories:
+   - **Type**: `research`, `tool`, `app`, `infrastructure`, `template`, `paper`, `exploratory`, `legacy`
+   - **Status**: `active`, `maintenance`, `exploratory`, `needs-rename`
+4. **Assigned owner** from the team
+
+### Creating New Repositories
+
+```bash
+# For Tissue Dynamics projects
+gh repo create Phase-Zero-Labs/td-your-project --private --team td-core
+
+# For Phase Zero Labs projects  
+gh repo create Phase-Zero-Labs/pzl-your-project --private --team pzl-core
+
+# For shared tooling
+gh repo create Phase-Zero-Labs/shared-your-tool --private --team td-core --team pzl-core
+```
+
+After creating:
+1. Add a description in Settings
+2. Add required topics
+3. Create a README with setup instructions
+
+## Technology Stack
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=flat&logo=svelte&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)
 ![R](https://img.shields.io/badge/R-276DC3?style=flat&logo=r&logoColor=white)
 
-## 📊 Research Areas
+## Maintenance
 
-- **Toxicity Prediction**: ML models for liver toxicity using molecular structures
-- **Aging Research**: RNA-seq analysis of aging biomarkers in organoids
-- **Drug Discovery**: High-throughput screening and pharmacokinetic modeling
-- **Tissue Engineering**: Organosphere development and optimization
+Repository compliance is automatically audited weekly. Issues are created in non-compliant repos.
 
-## 🤝 Collaboration
-
-We collaborate with leading pharmaceutical companies and research institutions. For partnership opportunities or questions about our work, please open an issue in our [General](https://github.com/Tissue-Dynamics/General) repository.
-
-## 📚 Publications
-
-Our research contributes to advancing the field of personalized medicine. Check our paper repositories for detailed methodologies and findings in toxicity prediction, high-throughput screening, and organoid technology.
+See [shared-org-maintenance](https://github.com/Phase-Zero-Labs/shared-org-maintenance) for details.
 
 ---
 
